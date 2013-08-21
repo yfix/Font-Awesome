@@ -53,7 +53,7 @@ a [class*=" icon-"] {
   cursor: pointer;
 }
 
-.ie7icon(@inner) { *zoom: ~"expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '@{inner}')"; }
+.ie7icon(@inner) { *zoom: ~"expression(innerHTML = '@{inner}', 1)"; }
 
 {% for icon in icons %}
 .icon-{{ icon.id }} {
