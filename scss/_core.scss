@@ -43,15 +43,15 @@ a {
 
 .icons-ul {
   padding-left: 0;
-  margin-left: $icons-li-width;
+  margin-left: $fontawesome-list-padding;
   list-style-type: none;
 
   > li { position: relative; }
 
   .icon-li {
     position: absolute;
-    left: -$icons-li-width;
-    width: $icons-li-width;
+    left: -$fontawesome-list-padding;
+    width: $fontawesome-list-padding;
     line-height: inherit;
     text-align: center;
   }
@@ -65,16 +65,16 @@ a {
   }
 }
 
-.icon-muted { color: $iconMuted; }
-.icon-light { color: $iconLight; }
-.icon-dark { color: $iconDark; }
+.icon-muted { color: $fontawesome-muted; }
+.icon-light { color: $fontawesome-light; }
+.icon-dark { color: $fontawesome-dark; }
 
 // Icon Borders
 // -------------------------
 
 .icon-border {
   padding: .2em .25em .15em;
-  border: solid 1px $borderColor;
+  border: solid 1px $fontawesome-border-color;
   @include border-radius(3px);
 }
 

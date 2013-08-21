@@ -1,14 +1,16 @@
+---
+---
 /* FONT PATH
  * -------------------------- */
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('#{$FontAwesomePath}/fontawesome-webfont.eot?v=#{$FontAwesomeVersion}');
-  src: url('#{$FontAwesomePath}/fontawesome-webfont.eot?#iefix&v=#{$FontAwesomeVersion}') format('embedded-opentype'),
-    url('#{$FontAwesomePath}/fontawesome-webfont.woff?v=#{$FontAwesomeVersion}') format('woff'),
-    url('#{$FontAwesomePath}/fontawesome-webfont.ttf?v=#{$FontAwesomeVersion}') format('truetype'),
-    url('#{$FontAwesomePath}/fontawesome-webfont.svg?v=#{$FontAwesomeVersion}#fontawesomeregular') format('svg');
-//  src: url('#{$FontAwesomePath}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  src: url('#{${{ site.fontawesome.prefix }}font-path}#{${{ site.fontawesome.prefix }}font-name}.eot?v=#{${{ site.fontawesome.prefix }}font-version}');
+  src: url('#{${{ site.fontawesome.prefix }}font-path}#{${{ site.fontawesome.prefix }}font-name}.eot?#iefix&v=#{${{ site.fontawesome.prefix }}font-version}') format('embedded-opentype'),
+    url('#{${{ site.fontawesome.prefix }}font-path}#{${{ site.fontawesome.prefix }}font-name}.woff?v=#{${{ site.fontawesome.prefix }}font-version}') format('woff'),
+    url('#{${{ site.fontawesome.prefix }}font-path}#{${{ site.fontawesome.prefix }}font-name}.ttf?v=#{${{ site.fontawesome.prefix }}font-version}') format('truetype'),
+    url('#{${{ site.fontawesome.prefix }}font-path}#{${{ site.fontawesome.prefix }}font-name}.svg?v=#{${{ site.fontawesome.prefix }}font-version}#fontawesomeregular') format('svg');
+//  src: url('#{${{ site.fontawesome.prefix }}font-path}FontAwesome.otf') format('opentype'); // used when developing fonts
   font-weight: normal;
   font-style: normal;
 }
