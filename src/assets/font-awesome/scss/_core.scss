@@ -5,7 +5,7 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-  @include icon-FontAwesome();
+  @include fontawesome-base-icon();
 }
 
 [class^="icon-"]:before,

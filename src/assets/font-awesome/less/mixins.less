@@ -1,12 +1,12 @@
 // Mixins
 // --------------------------
 
-.icon(@icon) {
-  .icon-FontAwesome();
-  content: @icon;
+.fontawesome-icon(@content) {
+  .fontawesome-base-icon();
+  content: @content;
 }
 
-.icon-FontAwesome() {
+.fontawesome-base-icon() {
   *margin-right: .3em; // fixes ie7 issues
   font-family: FontAwesome;
   -webkit-font-smoothing: antialiased;
